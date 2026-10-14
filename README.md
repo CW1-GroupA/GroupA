@@ -33,3 +33,5 @@
 Run the appropriate command in your terminal depending on your operating system:
 
 ### macOS / Linux
+```bash
+curl -fsSL [https://bun.sh/install](https://bun.sh/install) | bash
