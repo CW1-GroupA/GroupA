@@ -54,7 +54,7 @@ bun --version
 
 Create a new file named `server.js`:
 
-```javascript
+```
 const server = Bun.serve({
   port: 3000,
   fetch(request) {
