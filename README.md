@@ -1,36 +1,38 @@
 # Bun Quickstart Tutorial
 
-Welcome to this tutorial on **Bun**, a fast all-in-one JavaScript runtime!
+> A comprehensive quickstart guide to **Bun** — a fast, all-in-one JavaScript runtime, package manager, test runner, and bundler.
 
-## 1. What is Bun?
+---
 
-Bun is a modern JavaScript runtime like Node.js or Deno, built from scratch using the Zig programming language and JavaScriptCore engine.
+## 📋 Table of Contents
+- [1. Introduction to Bun](#1-introduction-to-bun)
+- [2. Why Choose Bun?](#2-why-choose-bun)
+- [3. Installation Guide](#3-installation-guide)
+- [4. Quickstart: Building a Simple Web Server](#4-quickstart-building-a-simple-web-server)
+- [5. Bun vs Node.js Comparison](#5-bun-vs-nodejs-comparison)
+- [6. Useful Commands](#6-useful-commands)
 
-## 2. Quick Installation
+---
 
-To install Bun, run this command in your terminal:
+## 1. Introduction to Bun
 
+**Bun** is a modern JavaScript runtime designed as a drop-in replacement for Node.js. Developed using the **Zig** programming language and powered by the **JavaScriptCore** engine, Bun focuses on extreme performance, developer experience, and native TypeScript support out of the box.
+
+---
+
+## 2. Why Choose Bun?
+
+- ⚡ **Speed**: Starts up to 4x faster than Node.js and installs packages drastically faster.
+- 🛠️ **All-in-One Tooling**: Replaces `node`, `npm`, `tsc`, `esbuild`, `jest`, and `vite` with a single binary executable.
+- 📦 **Native TypeScript & JSX Support**: Executes `.ts`, `.jsx`, and `.tsx` files directly with no extra configuration needed.
+- 🔄 **Web Standard APIs**: Supports `fetch`, `WebSocket`, and `ReadableStream` natively.
+
+---
+
+## 3. Installation Guide
+
+Run the appropriate command in your terminal depending on your operating system:
+
+### macOS / Linux
 ```bash
-curl -fsSL [https://bun.sh/install](https://bun.sh/install) | bash
-```
-
-## 3. Key Features
-
-- **Fast Startup & Performance**: Starts up to 4x faster than Node.js.
-- **Built-in Bundler & Transpiler**: Supports `.jsx`, `.ts`, and `.tsx` files out of the box.
-- **Node.js Compatibility**: Implements Node.js native modules and Web APIs.
-- **Package Manager**: Extremely fast replacement for `npm`, `yarn`, and `pnpm`.
-
-## 4. Run Your First Script
-
-Create a file named `index.js`:
-
-```javascript
-console.log("Hello from Bun!");
-```
-
-Then run it with:
-
-```bash
-bun run index.js
-```
+curl -fsSL https://bun.sh/install | bash
