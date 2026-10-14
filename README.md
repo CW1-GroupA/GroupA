@@ -1,7 +1,5 @@
 # Bun Quickstart Tutorial
 
-> A comprehensive quickstart guide to **Bun** — a fast, all-in-one JavaScript runtime, package manager, test runner, and bundler.
-
 ---
 
 ## 📋 Table of Contents
@@ -56,7 +54,6 @@ bun --version
 Create a new file named `server.js`:
 
 ```
-// server.js
 const server = Bun.serve({
   port: 3000,
   fetch(request) {
@@ -96,7 +93,3 @@ Open your browser and navigate to `http://localhost:3000` to see your running se
 | **Add a package** | `bun add <pkg>` | `npm install <pkg>` |
 | **Run a script** | `bun run index.ts` | `npx ts-node index.ts` |
 | **Run tests** | `bun test` | `npm test` |
-
----
-
-*Created by **CW1 Group A** for Academic Presentation & Demonstration.*
