@@ -7,8 +7,9 @@
 - [2. Why Choose Bun?](#2-why-choose-bun)
 - [3. Installation Guide](#3-installation-guide)
 - [4. Quickstart: Building a Simple Web Server](#4-quickstart-building-a-simple-web-server)
-- [5. Bun vs Node.js Comparison](#5-bun-vs-nodejs-comparison)
-- [6. Useful Commands](#6-useful-commands)
+- [5. Package Management with Bun](#5-package-management-with-bun)
+- [6. Bun vs Node.js Comparison](#6-bun-vs-nodejs-comparison)
+- [7. Troubleshooting & FAQ](#7-troubleshooting--faq)
 
 ---
 
@@ -53,7 +54,7 @@ bun --version
 
 Create a new file named `server.js`:
 
-```
+```javascript
 const server = Bun.serve({
   port: 3000,
   fetch(request) {
@@ -70,11 +71,33 @@ Run the server directly with Bun:
 bun run server.js
 ```
 
-Open your browser and navigate to `http://localhost:3000` to see your running server!
+### Expected Terminal Output
+```
+Listening on http://localhost:3000
+```
+Open your browser and navigate to `http://localhost:3000` to view the response.
 
 ---
 
-## 5. Bun vs Node.js Comparison
+## 5. Package Management with Bun
+
+Bun includes a lightning-fast package manager that works seamlessly with `package.json`.
+
+### Install Dependencies
+To install a package (e.g., `figlet`):
+```
+bun add figlet
+```
+
+### Run Scripts
+Execute your project scripts defined in `package.json`:
+```
+bun run start
+```
+
+---
+
+## 6. Bun vs Node.js Comparison
 
 | Feature | Bun | Node.js |
 | :--- | :--- | :--- |
@@ -85,11 +108,10 @@ Open your browser and navigate to `http://localhost:3000` to see your running se
 
 ---
 
-## 6. Useful Commands
+## 7. Troubleshooting & FAQ
 
-| Task | Bun Command | Equivalent npm Command |
-| :--- | :--- | :--- |
-| **Install packages** | `bun install` | `npm install` |
-| **Add a package** | `bun add <pkg>` | `npm install <pkg>` |
-| **Run a script** | `bun run index.ts` | `npx ts-node index.ts` |
-| **Run tests** | `bun test` | `npm test` |
+**Q: Is Bun fully compatible with Node.js modules?**  
+A: Bun implements most Node.js native APIs (such as `fs`, `path`, and `buffer`), making it compatible with the majority of existing npm packages.
+
+**Q: How do I update Bun to the latest version?**  
+A: Run `bun upgrade` in your terminal.
