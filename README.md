@@ -33,5 +33,85 @@
 Run the appropriate command in your terminal depending on your operating system:
 
 ### macOS / Linux
-```bash
+```
 curl -fsSL [https://bun.sh/install](https://bun.sh/install) | bash
+```
+
+### Windows (PowerShell)
+```
+powershell -c "irm bun.sh/install.ps1 | iex"
+```
+
+### Verify Installation
+Check that Bun is properly installed by running:
+```
+bun --version
+```
+
+---
+
+## 4. Quickstart: Building a Simple Web Server
+
+Create a new file named `server.js`:
+
+```
+const server = Bun.serve({
+  port: 3000,
+  fetch(request) {
+    return new Response("Hello World from Bun Server!");
+  },
+});
+
+console.log(`Listening on http://localhost:${server.port}`);
+```
+
+Run the server directly with Bun:
+
+```
+bun run server.js
+```
+
+### Expected Terminal Output
+```
+Listening on http://localhost:3000
+```
+Open your browser and navigate to `http://localhost:3000` to view the response.
+
+---
+
+## 5. Package Management with Bun
+
+Bun includes a lightning-fast package manager that works seamlessly with `package.json`.
+
+### Install Dependencies
+To install a package (e.g., `figlet`):
+```
+bun add figlet
+```
+
+### Run Scripts
+Execute your project scripts defined in `package.json`:
+```
+bun run start
+```
+
+---
+
+## 6. Bun vs Node.js Comparison
+
+| Feature | Bun | Node.js |
+| :--- | :--- | :--- |
+| **Engine** | JavaScriptCore | V8 |
+| **Language** | Zig | C++ |
+| **TypeScript Support** | Native (Zero Config) | Requires Transpiler (`tsc` / `ts-node`) |
+| **Package Manager** | Built-in (`bun install`) | External (`npm` / `yarn` / `pnpm`) |
+
+---
+
+## 7. Troubleshooting & FAQ
+
+**Q: Is Bun fully compatible with Node.js modules?**  
+A: Bun implements most Node.js native APIs (such as `fs`, `path`, and `buffer`), making it compatible with the majority of existing npm packages.
+
+**Q: How do I update Bun to the latest version?**  
+A: Run `bun upgrade` in your terminal.
