@@ -34,5 +34,69 @@
 Run the appropriate command in your terminal depending on your operating system:
 
 ### macOS / Linux
-```bash
-curl -fsSL https://bun.sh/install | bash
+```
+curl -fsSL [https://bun.sh/install](https://bun.sh/install) | bash
+```
+
+### Windows (PowerShell)
+```
+powershell -c "irm bun.sh/install.ps1 | iex"
+```
+
+### Verify Installation
+Check that Bun is properly installed by running:
+```
+bun --version
+```
+
+---
+
+## 4. Quickstart: Building a Simple Web Server
+
+Create a new file named `server.js`:
+
+```
+// server.js
+const server = Bun.serve({
+  port: 3000,
+  fetch(request) {
+    return new Response("Hello World from Bun Server!");
+  },
+});
+
+console.log(`Listening on http://localhost:${server.port}`);
+```
+
+Run the server directly with Bun:
+
+```
+bun run server.js
+```
+
+Open your browser and navigate to `http://localhost:3000` to see your running server!
+
+---
+
+## 5. Bun vs Node.js Comparison
+
+| Feature | Bun | Node.js |
+| :--- | :--- | :--- |
+| **Engine** | JavaScriptCore | V8 |
+| **Language** | Zig | C++ |
+| **TypeScript Support** | Native (Zero Config) | Requires Transpiler (`tsc` / `ts-node`) |
+| **Package Manager** | Built-in (`bun install`) | External (`npm` / `yarn` / `pnpm`) |
+
+---
+
+## 6. Useful Commands
+
+| Task | Bun Command | Equivalent npm Command |
+| :--- | :--- | :--- |
+| **Install packages** | `bun install` | `npm install` |
+| **Add a package** | `bun add <pkg>` | `npm install <pkg>` |
+| **Run a script** | `bun run index.ts` | `npx ts-node index.ts` |
+| **Run tests** | `bun test` | `npm test` |
+
+---
+
+*Created by **CW1 Group A** for Academic Presentation & Demonstration.*
