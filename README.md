@@ -34,7 +34,7 @@ Run the appropriate command in your terminal depending on your operating system:
 
 ### macOS / Linux
 ```
-curl -fsSL [https://bun.sh/install](https://bun.sh/install) | bash
+curl -fsSL https://bun.sh/install | bash
 ```
 
 ### Windows (PowerShell)
