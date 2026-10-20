@@ -102,7 +102,7 @@ Bun.serve({
         <h1>⚡ Bun Shortener <span class="badge">SQLite Inside</span></h1>
         <p>Built natively with Bun runtime and SQLite database.</p>
         <div class="input-group">
-          <input type="url" id="longUrl" placeholder="[https://example.com/very-long-url](https://example.com/very-long-url)" required>
+          <input type="url" id="longUrl" placeholder="https://example.com/very-long-url" required>
           <button onclick="shorten()">Shorten</button>
         </div>
         <div id="result">Short URL: <a id="shortLink" href="#" target="_blank"></a></div>
