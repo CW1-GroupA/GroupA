@@ -1,4 +1,4 @@
-mport { Database } from "bun:sqlite";
+import { Database } from "bun:sqlite";
 const db = new Database("urls.sqlite");
 db.run("CREATE TABLE IF NOT EXISTS urls (id TEXT PRIMARY KEY, originalUrl TEXT)");
 Bun.serve({
