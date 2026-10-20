@@ -1,16 +1,40 @@
-# COMP10020 CW1 — Bun Runtime Tutorial
-Group A
+# ⚡ Group A - Bun Web Technology
+A practical guide on Bun runtime, native SQLite database integration and web development.
 
-## 📌 Overview
-Bun is a fast all-in-one JavaScript runtime written in Zig.
-Compared with Node.js, Bun provides **native SQLite database**, built-in HTTP server, and built-in package manager without extra installation.
+`Bun v1.4.3` `Course UWS Web Technology` `Deployment GitHub Pages`
 
+---
+
+## 📋 Table of Contents
+1. Executive Summary & Introduction
+2. Key Advantages of Bun
+3. Practical Live Demo: Full-Stack URL Shortener
+4. Performance Architecture: Bun vs Node.js
+5. Troubleshooting & Common Pitfalls
+6. Group Contribution & Hard Work
+
+---
+
+## 1. Executive Summary & Introduction
+Bun is a modern JavaScript and TypeScript runtime designed as a high-performance alternative to Node.js. It is written in Zig, focusing on speed, built-in tools and reduced dependency overhead.
+
+This tutorial demonstrates core Bun features with a self-contained URL shortener application, including native HTTP server (`Bun.serve`) and built-in `bun:sqlite` database.
+
+---
+
+## 2. Key Advantages of Bun
 | Feature | Bun | Node.js |
 |---|---|---|
 | Language | Zig | C/C++ |
 | TypeScript Support | Native (Zero Config) | Requires `tsc` or ts-node |
 | Built-in Database | Native `bun:sqlite` | Requires external packages |
 | Package Manager | Built-in `bun install` | Requires npm / yarn / pnpm |
+
+- Fast startup time
+- Built-in HTTP server
+- Embedded SQLite database, no extra driver
+- Native TypeScript support
+- All-in-one toolchain: runtime, bundler, package manager, test runner
 
 ---
 
