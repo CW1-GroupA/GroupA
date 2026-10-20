@@ -1,17 +1,13 @@
 # Group A - CW1: An Investigation into the Bun JavaScript Runtime
 > A practical investigation of the Bun runtime, native SQLite integration and high-performance web service development
 
-[![Bun Version](https://img.shields.io/badge/Bun-v1.4.3-fbf0df?style=flat-square&logo=bun&logoColor=black)](https://bun.sh)
-[![Course](https://img.shields.io/badge/Course-UWS_Web_Technology-blue?style=flat-square)](https://www.uws.ac.uk)
-[![Docs Host](https://img.shields.io/badge/Docs-GitHub_Pages-success?style=flat-square&logo=github)](https://cw1-groupa.github.io/GroupA/)
-
-## 📋 Table of Contents
-1. [Executive Summary & Introduction](#1-executive-summary--introduction)
-2. [Key Advantages of Bun](#2-key-advantages-of-bun)
-3. [Practical Demo: Full-Stack URL Shortener](#3-practical-demo-full-stack-url-shortener)
-4. [Performance Comparison: Bun vs Node.js](#4-performance-comparison-bun-vs-nodejs)
-5. [Troubleshooting and Common Pitfalls](#5-troubleshooting-and-common-pitfalls)
-6. [Group Contribution Statement](#6-group-contribution-statement)
+## Table of Contents
+- 1. [Executive Summary & Introduction](#1-executive-summary--introduction)
+- 2. [Key Advantages of Bun](#2-key-advantages-of-bun)
+- 3. [Practical Demo: Full-Stack URL Shortener](#3-practical-demo-full-stack-url-shortener)
+- 4. [Performance Comparison: Bun vs Node.js](#4-performance-comparison-bun-vs-nodejs)
+- 5. [Troubleshooting and Common Pitfalls](#5-troubleshooting-and-common-pitfalls)
+- 6. [Group Contribution Statement](#6-group-contribution-statement)
 
 ---
 
