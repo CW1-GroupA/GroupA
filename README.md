@@ -6,12 +6,12 @@
 [![Docs Host](https://img.shields.io/badge/Docs-GitHub_Pages-success?style=flat-square&logo=github)](https://cw1-groupa.github.io/GroupA/)
 
 ## 📋 Table of Contents
-1. [Executive Summary & Introduction](#executive-summary--introduction)
-2. [Key Advantages of Bun](#key-advantages-of-bun)
-3. [Practical Demo: Full-Stack URL Shortener](#practical-demo-full-stack-url-shortener)
-4. [Performance Comparison: Bun vs Node.js](#performance-comparison-bun-vs-nodejs)
-5. [Troubleshooting and Common Pitfalls](#troubleshooting-and-common-pitfalls)
-6. [Group Contribution Statement](#group-contribution-statement)
+1. [Executive Summary & Introduction](#1-executive-summary--introduction)
+2. [Key Advantages of Bun](#2-key-advantages-of-bun)
+3. [Practical Demo: Full-Stack URL Shortener](#3-practical-demo-full-stack-url-shortener)
+4. [Performance Comparison: Bun vs Node.js](#4-performance-comparison-bun-vs-nodejs)
+5. [Troubleshooting and Common Pitfalls](#5-troubleshooting-and-common-pitfalls)
+6. [Group Contribution Statement](#6-group-contribution-statement)
 
 ---
 
@@ -116,26 +116,3 @@ Bun.serve({
   },
 });
 console.log("🚀 URL Shortener running at http://localhost:3000");
----
-## 4. Performance Comparison: Bun vs Node.js
-We benchmarked both runtimes under identical test conditions, measuring cold startup time, memory consumption and throughput for HTTP requests.
-Bun demonstrates substantially faster cold start, as it avoids the heavy initialisation overhead of the V8 engine and Node module system. For simple I/O services such as this URL shortener, Bun can handle more concurrent requests with a smaller memory footprint.
-However, Node.js has a larger ecosystem, broader compatibility with third-party libraries and mature production tooling, which remains an advantage for complex enterprise projects.
-
----
-## 5. Troubleshooting and Common Pitfalls
-1. **bun:sqlite database file location**: The SQLite database file will be created relative to the working directory where the server is launched, which can lead to missing database files when deployed.
-2. **API incompatibility**: Bun implements most Web APIs, but some Node-specific modules are not fully supported. Code written for Node.js may require modification.
-3. **Deployment restrictions**: Bun cannot be directly hosted on static hosting platforms such as GitHub Pages, as it requires a server environment to run persistent backend services.
-4. **ID collision risk**: The `Math.random()` approach for generating short IDs is simple for demos but is not cryptographically secure and may produce duplicate identifiers.
-
----
-## 6. Group Contribution Statement
-Each team member contributed to different parts of this coursework.
-- Research: Investigation of Bun features, comparison with Node.js and literature review
-- Implementation: Development of the Bun URL shortener backend and embedded frontend interface
-- Testing: Benchmark performance testing, bug fixing and validation of database logic
-- Documentation: Preparation of this GitHub README page, formatting and coursework write-up
-- Presentation: Slides preparation and live demo preparation
-
-All members collaborated to review the final work and ensure the coursework meets the assessment requirements.
