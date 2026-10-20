@@ -9,13 +9,13 @@
 ---
 
 ## 📋 Table of Contents
-- [1. Executive Summary & Introduction](#1-executive-summary--introduction)
-- [2. Key Advantages of Bun](#2-key-advantages-of-bun)
-- [3. Environment Setup & Installation](#3-environment-setup--installation)
-- [4. Practical Live Demo: Full-Stack URL Shortener](#4-practical-live-demo-full-stack-url-shortener)
-- [5. Performance Architecture: Bun vs Node.js](#5-performance-architecture-bun-vs-nodejs)
-- [6. Troubleshooting & Common Pitfalls](#6-troubleshooting--common-pitfalls)
-- [7. Group Contribution & Hard Work](#7-group-contribution--hard-work)
+1. [Executive Summary & Introduction](#1-executive-summary--introduction)
+2. [Key Advantages of Bun](#2-key-advantages-of-bun)
+3. [Environment Setup & Installation](#3-environment-setup--installation)
+4. [Practical Live Demo: Full-Stack URL Shortener](#4-practical-live-demo-full-stack-url-shortener)
+5. [Performance Architecture: Bun vs Node.js](#5-performance-architecture-bun-vs-nodejs)
+6. [Troubleshooting & Common Pitfalls](#6-troubleshooting--common-pitfalls)
+7. [Group Contribution & Hard Work](#7-group-contribution--hard-work)
 
 ---
 
@@ -46,7 +46,8 @@ Built using Apple's JavaScriptCore engine and written in the Zig programming lan
 
 ## 3. Environment Setup & Installation
 
+Run the appropriate command in your terminal depending on your operating system:
+
 ### Windows (PowerShell)
-Run the following command in PowerShell:
 ```powershell
 powershell -c "irm bun.sh/install.ps1 | iex"
