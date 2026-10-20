@@ -12,12 +12,6 @@
 1. [Executive Summary & Introduction](#1-executive-summary--introduction)
 2. [Key Advantages of Bun](#2-key-advantages-of-bun)
 3. [Practical Live Demo: Full-Stack URL Shortener](#3-practical-live-demo-full-stack-url-shortener)
-4. [Performance Architecture: Bun vs Node.js](#4-performance-architecture-bun-vs-nodejs)
-5. [Troubleshooting & Common Pitfalls](#5-troubleshooting--common-pitfalls)
-6. [Group Contribution & Hard Work](#6-group-contribution--hard-work)
-
----
-
 ## 1. Executive Summary & Introduction
 
 Bun is a modern JavaScript and TypeScript runtime designed as a high-performance, drop-in replacement for Node.js.
